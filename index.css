@@ -1,0 +1,71 @@
+
+.heading-card {
+    grid-area: heading;
+    text-align: center;
+    padding: 0px 50px;
+}
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    background-color: #ebebeb;
+    padding: 10px 50px 40px 50px;
+    grid-template-areas:'heading heading'
+                        'form result'
+                        'about about';
+}
+
+.form-card {
+    
+    grid-area: form;
+    background-color: #e6e6e6;
+    padding: 2px 40px;
+    border: 1px solid #3da1ff;
+    border-radius: 4px;
+    
+}
+
+.form-group{
+    margin: 10px 0px;
+    padding: 10px;
+    border: 1px solid rgba(197, 227, 255, 0.397);
+}
+
+
+.hasil-card {
+    grid-area: result;
+    background-color: #3da1ff;
+    border-radius: 4px;
+}
+.hasil-dalam {
+    background-color: #ffffff;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+.hasil{
+    font-size: 40px;
+}
+
+.diagnosa{
+    margin: 10px 0px;
+}
+
+.about-bmi{
+    grid-area: about;
+    margin-top: 0px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 6px 40px 6px 6px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px;
+}

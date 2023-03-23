@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    
+</head>
+<body>
+
+<div class="grid-container">
+
+    <div class="heading-card">
+        <h2> Kalkulator BMI</h2>
+        <p> Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang
+            penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana dengan mu? 
+            Yuk hitung sekarang di kalkulator BMI.
+        </p>
+    </div>
+
+
+
+    <div class="form-card"> 
+        <form id="" name="" class="form">
+            <div class="form-group"> 
+                <div class="form-group-jk">
+                    <strong>Jenis Kelamin</strong>
+                    <input type="radio" id="laki" name="gender" value="laki"  required="true">
+                    <label for="jenis-kelamin"> Laki-Laki </label>
+                    <input type="radio" id="perempuan" name="gender" value="perempuan"  required="true">
+                    <label for="jenis-kelamin"> Perempuan </label>
+                </div>
+            </div>
+
+            <div class="form-group"> 
+                <label form="berat-badan"> Berat Badan (kg) </label>
+                <div class="icon-form">
+                    <div class="icon"> 
+                    <input type="text" id="berat" name="berat-badan" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group"> 
+                <label form="tinggi-badan"> Tinggi Badan (cm) </label>
+                <div class="icon-form">
+                    <div class="icon"> 
+                    <input type="text" id="tinggi" name="tinggi-badan"  required> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="button-group"> 
+                    <button onclick="hitungBMI()"  type="button"> Hitung BMI </button>
+                    <button id="reset" type="submit"> Reset </button>
+                </div>
+            </div>
+        </form>
+    </div> 
+
+
+
+    <div class="hasil-card">
+        <div class="hasil-dalam">
+            <h2>Hasil BMI Anda</h2>
+            <div class="hasil" id="hasil">0</div>
+            <div class="diagnosa" id="diagnosa"></div>
+        </div>
+    </div>
+
+
+
+    <div class="about-bmi" >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Perferendis sit maiores praesentium tenetur, eum,
+        explicabo repellendus alias delectus labore quas dolores
+        quaerat sapiente distinctio mollitia porro cumque officiis perspiciatis voluptates.
+    </div>
+
+</div>
+<script src="index.js"></script>
+</body>
+</html>
